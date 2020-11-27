@@ -1,0 +1,10 @@
+<script>
+var links = document.links;
+for (var i = 0; i < links.length; i++) {
+  if (links[i].href.includes(window.location.hostname)) {
+  // set other exclusion conditions by adding or conditions within the if parens with || 
+    links[i].target = "_self";
+  }
+
+}
+</script>
